@@ -1,0 +1,16 @@
+NAME	= $(shell basename $(CURDIR))
+
+SRC		= $(wildcard *.c) ../00_ft_putchar/ft_putchar.c
+
+CFLAGS	= -O3 -pedantic -Wall -Wextra -Werror
+
+all: $(NAME)
+
+$(NAME): build
+	./$(NAME).bin
+
+build: clean
+	@cc $(CFLAGS) $(SRC) -o $(NAME).bin
+
+clean:
+	@rm -f *.bin
