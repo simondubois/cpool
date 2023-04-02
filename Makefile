@@ -1,8 +1,4 @@
-#
-# For self
-#
-
-SUBDIRS	= $(filter-out 00_ft_putchar/., $(wildcard */.))
+SUBDIRS	= $(filter-out 000_ft_putchar/., $(wildcard */.))
 
 .PHONY: force
 
