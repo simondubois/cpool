@@ -1,6 +1,6 @@
 NAME	= $(shell basename $(CURDIR))
 
-SRC		= $(filter-out ft_putnbr.c, $(wildcard *.c)) ../000_ft_putchar/ft_putchar.c ../007_ft_putnbr/ft_putnbr.c
+SRC		= $(filter-out ft_putnbr.c ft_putstr.c, $(wildcard *.c)) ../000_ft_putchar/ft_putchar.c ../007_ft_putnbr/ft_putnbr.c ../015_ft_putstr/ft_putstr.c
 
 CFLAGS	= -O3 -pedantic -Wall -Wextra -Werror
 
